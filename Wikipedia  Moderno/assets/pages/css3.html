@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 - Cascading Style Sheets</title>
+    <!-- Adicionando o favicon -->
+    <link rel="icon" type="image/png" href="/assets/img/CSS3.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div>
+        <div class="logo">
+            <img id="logo-home" src="/assets/img/CSS3.png" width="400" height="200" />
+        </div>
+    </div>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2>Tecnologias Front-End</h2>
+            <ul>
+                <li><a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank">Html5</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS3</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+
+            <!-- CSS3  -->
+            <br>
+
+
+
+            <h1 id="CSS">Cascading Style Sheets</h1>
+            <hr />
+
+            <p>Cascading Style Sheets (abreviado CSS) é um mecanismo para adicionar estilos (cores, fontes, espaçamento,
+                etc.) a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags
+                <strong>style</strong>. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que
+                contém os estilos. Assim, quando se quiser alterar a aparência dos documentos vinculados a este arquivo
+                CSS, basta modifica-lo.
+            </p>
+
+
+            <p>Com a variação de atualizações dos navegadores, o suporte ao CSS pode variar. A interpretação dos
+                navegadores pode ser avaliada com o teste Acid2, que se tornou uma forma base de revelar quão eficiente
+                é o suporte de CSS, fazendo com que a nova versão em desenvolvimento do Firefox seja totalmente
+                compatível a ele, assim como o Opera já é. O Doctype informado, ou a ausência dele, determina o quirks
+                mode ou o strict mode, modificando o modo como o CSS é interpretado e a página desenhada.</p>
+
+
+            <h2 id="Sintaxe">Sintaxe</h2>
+            <hr />
+
+            <p>CSS tem uma sintaxe simples, e utiliza uma série de palavras em inglês para especificar os nomes de
+                diferentes propriedade de estilo de uma página.</p>
+
+
+            <p>Uma instrução CSS consiste em um seletor e um bloco de declaração. Cada declaração contém uma propriedade
+                e um valor, separados por dois pontos (:). Cada declaração é separada por ponto e vírgula (;).</p>
+
+            <p>Em CSS, seletores são usados para declarar a quais elementos de marcação um estilo se aplica, uma espécie
+                de expressão correspondente. Os seletores podem ser aplicados a todos os elementos de um tipo
+                específico, ou apenas aqueles elementos que correspondam a um determinado atributo; elementos podem ser
+                combinados, dependendo de como eles são colocados em relação uns aos outros no código de marcação, ou
+                como eles estão aninhados dentro do objeto de documento modelo.
+            </p>
+
+            <p>Pseudoclasse é outra forma de especificação usada em CSS para identificar os elementos de marcação, e, em
+                alguns casos, ações específicas de usuário para o qual um bloco de declaração especial se aplica. Um
+                exemplo frequentemente utilizado é o :hover pseudoclasse que se aplica um estilo apenas quando o usuário
+                'aponta para' o elemento visível, normalmente, mantendo o cursor do mouse sobre ele. Isto é anexado a um
+                seletor como em a:hover ou #elementid:hover. Outras pseudoclasses e pseudoelementos são, p. ex.,
+                :first-line, :visited ou :before. Uma pseudoclasse especial é :lang(c), "c".</p>
+
+            <p>Uma pseudoclasse seleciona elementos inteiros, tais como :link ou :visited, considerando que um
+                pseudoelemento faz uma seleção que pode ser constituída por elementos parciais, tais como :first-line ou
+                :first-letter.
+            </p>
+
+            <p>Seletores podem ser combinados de outras formas também, especialmente em CSS 2.1, para alcançar uma maior
+                especificidade e flexibilidade.</p>
+
+            <p>Aqui está um exemplo que resume as regras acima:</p>
+
+            <figure>
+
+                <img src="/assets/img/Exemplo-3.png" alt="" width="100%">
+                <figcaption>Figura 03 - Exemplo de código</figcaption>
+
+            </figure>
+
+            <h2 id="Seletores">Seletores</h2>
+            <hr />
+
+            <p>Definição de estilo é um conjunto de propriedades visuais para um elemento, o CSS define regras que fazem
+                as definições de estilo casarem com um elemento ou grupo de elemento, o documento pode conter um bloco
+                de CSS num elemento style ou usando o elemento link apontando para um arquivo externo que contenha o
+                bloco CSS.</p>
+
+
+            <p>Para uso com o CSS, foi criado o atributo class que todo elemento pode conter.</p>
+
+            <p>As regras de casamento para o CSS são chamadas de seletores, uma definição de estilo pode ser casada com
+                um seletor ou um grupo de seletores separados por vírgula, um seletor pode casar um elemento por:
+            </p>
+
+            <ul>
+                <li><strong>Elemento do tipo :</strong> element_name { style definition; }</li>
+                <li><strong>Elemento do tipo com a classe :</strong> element_name.class_name { style definition; }</li>
+                <li><strong>Todos os elementos com a classe :</strong> .class_name { style definition; }</li>
+                <li><strong>O elemento com o id :</strong> #id_of_element { style definition; }</li>
+                <li><strong>Casamento de um grupo :</strong> element_name_01, element_name_02, .class_name { style
+                    definition; }</li>
+            </ul>
+
+            <h3>Exemplos</h3>
+
+            <figure>
+
+                <img src="/assets/img/Exemplo-4.png" alt="" width="100%">
+                <figcaption>Figura 04 - Exemplo de código</figcaption>
+
+            </figure>
+
+            <h2 id="Exemplos">Exemplos</h2>
+            <hr />
+
+            <figure>
+
+                <img src="/assets/img/Exemplo-5.png" alt="" width="100%">
+                <figcaption>Figura 05 - Exemplo de código</figcaption>
+
+            </figure>
+
+            <p>O código acima define fonte padrão Arial, caso não exista, substitui por Verdana, caso não exista, define
+                qualquer fonte sans-serif. Define também a cor de fundo do corpo da página.</p>
+
+            <p>Sua necessidade adveio do fato do HTML, aos poucos, ter deixado de ser usado apenas para criação de
+                conteúdo na web, e portanto havia uma mistura de formatação e conteúdo textual dentro do código de uma
+                mesma página. Contudo, na criação de um grande portal, fica quase impossível manter uma identidade
+                visual, bem como a produtividade do desenvolvedor. É nesse ponto que entra o CSS.</p>
+
+            <p>As especificações do CSS podem ser obtidas no site da W3C "World Wide Web Consortium", um consórcio de
+                diversas empresas que buscam estabelecer padrões para a Internet.</p>
+
+            <p>É importante notar que nenhum navegador suporta igualmente as definições do CSS. Desta forma, o web
+                designer deve sempre testar suas folhas de estilo em navegadores de vários fabricantes, e
+                preferencialmente em mais de uma versão, para se certificar de que o que foi codificado realmente seja
+                apresentado da forma desejada.</p>
+
+
+            <h2 id="Padronização">Padronização</h2>
+            <hr />
+
+            <h3>Frameworks</h3>
+
+            <p>Os frameworks CSS são bibliotecas pré-preparadas destinadas a permitir um estilo mais fácil e mais
+                compatível com os padrões de páginas da web usando a linguagem Cascading Style Sheets. Os frameworks CSS
+                incluem Blueprint, Bootstrap, Cascade Framework, Foundation e Materialize. Assim como as bibliotecas de
+                linguagem de programação e script, os frameworks CSS são geralmente incorporados como planilhas .css
+                externas referenciadas no HTML <strong>head</strong>. Eles fornecem uma série de opções prontas para
+                projetar e fazer o layout da página da web.
+                Embora muitos desses frameworks tenham sido publicados, alguns autores os usam principalmente para
+                prototipagem rápida, ou para aprender com, e preferem 'criar' CSS apropriado para cada site
+                publicado sem a sobrecarga de design, manutenção e download de muitos recursos não utilizados no
+                estilo do site.
+            </p>
+
+
+            <div id="Exemplo-6">
+
+
+                <figure>
+
+                    <img src="/assets/img/Exemplo-6.png" alt="">
+                    <figcaption>Figura 06 - CSS Snapshot 2021</figcaption>
+
+                </figure>
+
+
+
+            </div>
+
+
+
+            <h2 id="Metodologias">Metodologias de design</h2>
+            <hr />
+
+            <p>Conforme o tamanho dos recursos CSS usados em um projeto aumenta, uma equipe de desenvolvimento
+                geralmente precisa decidir sobre uma metodologia de design comum para mantê-los organizados. Os
+                objetivos são facilidade de desenvolvimento, facilidade de colaboração durante o desenvolvimento e
+                desempenho das folhas de estilo implementadas no navegador. As metodologias populares incluem OOCSS (CSS
+                orientado a objeto), ACSS (CSS atômico), oCSS (folha de estilo em cascata orgânica), SMACSS (arquitetura
+                escalável e modular para CSS) e BEM (bloco, elemento, modificador)</p>
+
+        </div>
+
+        <div class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#CSS">Cascading Style Sheets</a></li>
+                <li><a href="#Sintaxe">Sintaxe</a></li>
+                <li><a href="#Exemplos">Exemplos</a></li>
+                <li><a href="#Padronização">Padronização</a></li>
+                <li><a href="#Metodologias">Metodologias de design</a></li>
+            </ul>
+
+
+            <div class="page">
+                <h2>Páginas no Site</h2>
+                <ul>
+                    <li><a href="/assets/pages/html5.html" target="_blank">HTML5 - Hypertext Markup Language</a></li>
+                    <li><a href="/assets/pages/css3.html" target="_blank">CSS3 - Cascading Style Sheets</a></li>
+                    <li><a href="/assets/pages/javascript.html" target="_blank">JavaScript - linguagem de programação
+                            interpretada estruturada</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma empresa focada em tecnologia, trazendo soluções inovadoras para transformar o mundo
+                    digital.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@empresa.com</p>
+                <p>Telefone: (11) 98765-4321</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Desenvolvido pelo Prof. Hilly de Brito Pompermayer <a href="https://github.com/hillybrito"
+                    target="_blank">@hillybrito</a> - 👨🏻‍💻Desenvolvimento Front-end | Todos os direitos reservados.
+            </p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
